@@ -5,7 +5,7 @@ const App = () => {
     const [count, setCount] = useState(0);
     return (
         <View style={styles.container}>
-            <BriefCard />
+            <BriefCard title='Tiel' subtitle='Subt,tle' currency={100} />
         </View>
     );
 };

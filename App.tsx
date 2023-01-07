@@ -4,7 +4,7 @@ import { BriefCard } from './src/components';
 
 const App = () => {
   return (
-    <BriefCard />
+    <BriefCard title="Title" subtitle='Subtitle' currency={100} />
   );
 };
 

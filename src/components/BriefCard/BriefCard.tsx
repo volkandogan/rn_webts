@@ -1,18 +1,24 @@
-import React from 'react'
+import React, { createFactory } from 'react'
 import { RowContainer, BaseRowContainer, Image, ColumnContainer, LightText, BoldText } from './BriefCard.styles';
 
-const BriefCard = ({ }) => {
+type HeaderProps = {
+    title?: string,
+    subtitle?: string,
+    currency?: number,
+}
+
+const BriefCard = ({ title, subtitle, currency }: HeaderProps) => {
     return (
         <RowContainer>
             <BaseRowContainer>
                 <ColumnContainer>
-                    <LightText>hrader</LightText>
-                    <BoldText>İşlem Adedi: 3</BoldText>
+                    <LightText>{title}</LightText>
+                    <BoldText>{subtitle}</BoldText>
                 </ColumnContainer>
             </BaseRowContainer>
             <ColumnContainer>
                 <LightText>{''}</LightText>
-                <BoldText>100</BoldText>
+                <BoldText>{currency}</BoldText>
             </ColumnContainer>
         </RowContainer>
     )

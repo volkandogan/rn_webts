@@ -17,8 +17,6 @@ export const Image = styled.Image`
 export const RowContainer = styled.View`
   width: 100%;
   flex-direction: row;
-  justify-content: center,
-  align-items: center,
   display: flex;
   background-color: #FFF;
   margin-top: 24px
@@ -26,13 +24,9 @@ export const RowContainer = styled.View`
 export const ColumnContainer = styled.View`
     display: flex;
     flex-direction: column;
-    justify-content: center,
-    align-items: center,
     margin-left:12px;
 `
 export const BaseRowContainer = styled.View`
     display: flex;
     flex-direction: row;
-    justify-content: center,
-    align-items: center,
 `
