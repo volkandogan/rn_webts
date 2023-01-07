@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
-import { BriefCard } from './src/components';
+import RootNavigator from './src/navigation';
 const App = () => {
     const [count, setCount] = useState(0);
     return (
-        <View style={styles.container}>
-            <BriefCard title='Tiel' subtitle='Subt,tle' currency={100} />
-        </View>
+        <RootNavigator />
     );
 };
 

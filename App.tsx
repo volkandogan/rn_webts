@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { BriefCard } from './src/components';
+import RootNavigator from './src/navigation';
 
 const App = () => {
   return (
-    <BriefCard title="Title" subtitle='Subtitle' currency={100} />
+    <RootNavigator />
   );
 };
 
